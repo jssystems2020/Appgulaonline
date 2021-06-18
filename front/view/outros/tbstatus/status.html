@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="status.css" />
+  <title>Gula Online</title>
+</head>
+
+<body onload="carregaStatus()">
+
+  <div class="table1">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"> Alimentos </th>
+        </tr>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbstatus"></tbody>
+      <tfoot>
+        <tr>
+          <td>Auto</td>
+          <td><input type="text" placeholder="Alimento" id="nomestatus" /></td>
+          <td><input type="button" value="Adicionar" onclick="addStatus()" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <!--<p class="msg" id="mensagem">Mensagens do Sistema</p>-->
+  <script src="status.js"></script>
+</body>
+
+</html>

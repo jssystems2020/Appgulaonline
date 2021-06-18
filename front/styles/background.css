@@ -1,0 +1,12 @@
+body {
+    background-color: #ececec;
+    background-image: url("../resources/img/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer {
+    background-color: #000039;
+    color: white;
+}

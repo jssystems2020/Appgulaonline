@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./robesio/todos_empre/empreendedores.css" />
+    <title>Gula Online</title>
+</head>
+
+<body onload="carregaUsuarios()">
+    <b><a id="abacate" href="./outros/login/login.html">Voltar</a></b><br><br>
+    <!--<p class="msg" id="mensagem">Mensagens do Sistema</p>-->
+    <div class="table1">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="13"> Perfil do Usuário </th>
+                </tr>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome*</th>
+                    <th>CPF*</th>
+                    <th>Fone*</th>
+                    <th>Bairro</th>
+                    <th>Rua</th>
+                    <th>Número</th>
+                    <th>Cidade</th>
+                    <th>UF</th>
+                    <th>CNPJ</th>
+                    <th>Nome_Empresa</th>
+                    <th>Email*</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tbcadastro"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Auto</td>
+                    <td><input type="text" placeholder="Nome" id="nome" /> </td>
+                    <td><input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"
+                            placeholder="CPF" id="cpf"></td>
+                    <td><input type="text" class="form-control cel-sp-mask" placeholder="Ex.: (00) 00000-0000"
+                            placeholder="Fone" id="fone"></td>
+                    <td><input type="text" placeholder="Bairro" id="bairro" /></td>
+                    <td><input type="text" placeholder="Rua" id="rua" /></td>
+                    <td><input type="number" placeholder="Número" id="numero" /> </td>
+                    <td><input type="text" placeholder="Cidade" id="cidade" /></td>
+                    <td><input type="text" placeholder="UF" id="uf" /></td>
+                    <td><input type="number" placeholder="CNPJ" id="cnpj" /></td>
+                    <td><input type="text" placeholder="Nome da Empresa" id="linksite" /></td>
+                    <td><input type="text" placeholder="Email" id="email" />
+                        <input type="password" placeholder="Senha" id="senha" />
+                    </td>
+                    <td><select id="idti_lo">
+                            <option value="3">1 - Comum</option>
+                            <option value="2">2 - Empeendedor</option>
+                        </select></td>
+                    <td><input type="button" value="Adicionar" onclick="addUsuario()" /></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./robesio/todos_empre/empreendedores.js"></script>
+</body>
+
+</html>
